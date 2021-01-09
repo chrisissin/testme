@@ -15,7 +15,17 @@
 			"file": "twosum.js",
 			"settings":
 			{
-				"buffer_size": 591,
+				"buffer_size": 630,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "/**"
+			}
+		},
+		{
+			"file": "countbites.js",
+			"settings":
+			{
+				"buffer_size": 334,
 				"encoding": "UTF-8",
 				"line_ending": "Windows",
 				"name": "/**"
@@ -52,6 +62,10 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/C/Users/chris/code/testme"
+	],
 	"file_history":
 	[
 		"/C/Users/chris/code/trycraiglist/node_modules/core-js/client/core.js"
@@ -96,7 +110,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -105,15 +119,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 591,
+						"buffer_size": 630,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								591,
-								591
+								42,
+								42
 							]
 						],
 						"settings":
@@ -124,6 +138,35 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "countbites.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 334,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								51,
+								51
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/**",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 113.333333333,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
