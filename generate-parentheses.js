@@ -22,7 +22,7 @@ var backtrack = function(ans, cur, open, close, n){
         if (close < open)
             backtrack(ans, cur+")", open, close+1, n);    
 }
-
+console.log(generateParenthesis(3));
 /*
 2
 0 < 2 (  
