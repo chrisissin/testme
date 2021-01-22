@@ -38,13 +38,13 @@ var recursive = function(nums, result, cur, index){
   result.push(cur.concat());
   for(var i = 0; i < nums.length; i++){
     //cur.splice(0,0,nums[i]);
-    if(nums[i] == nums[i-1])continue;
-    console.log("b",cur, nums, i)
-    cur.push(nums[i]);
-    console.log(cur, i)
-    recursive(nums.slice(i+1),result, cur, index+1);
-    cur.pop();
-    
+    if(nums[i] !== nums[i-1]){//continue;
+      console.log("b",cur, nums, i)
+      cur.push(nums[i]);
+      console.log(cur, i)
+      recursive(nums.slice(i+1),result, cur, index+1);
+      cur.pop();
+    }
     //cur.splice(0,1);
   }
 }
