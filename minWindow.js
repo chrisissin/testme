@@ -41,3 +41,5 @@ Follow up: Could you find an algorithm that runs in O(n) time?
 var minWindow = function(s, t) {
     
 };
+
+console.log(minWindow("ADOBECODEBANC","ABC"));

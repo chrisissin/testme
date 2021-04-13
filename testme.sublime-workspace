@@ -4,8 +4,64 @@
 		"selected_items":
 		[
 			[
+				"fra",
+				"fractionToDecimal"
+			],
+			[
+				"n",
+				"newArray"
+			],
+			[
+				"merge",
+				"mergeArrays"
+			],
+			[
+				"my",
+				"myArray"
+			],
+			[
+				"al",
+				"alicesArray"
+			],
+			[
 				"con",
-				"console"
+				"concat"
+			],
+			[
+				"char",
+				"charAt"
+			],
+			[
+				"pa",
+				"payback"
+			],
+			[
+				"fin",
+				"function"
+			],
+			[
+				"pay",
+				"pay"
+			],
+			[
+				"say",
+				"sayHello"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"node",
+				"node3"
+			],
+			[
+				"averag",
+				"averageLevel"
+			],
+			[
+				"le",
+				"left"
 			]
 		]
 	},
@@ -30,6 +86,173 @@
 				"line_ending": "Windows",
 				"name": "/**"
 			}
+		},
+		{
+			"file": "averageLevel.js",
+			"settings":
+			{
+				"buffer_size": 1553,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "/*"
+			}
+		},
+		{
+			"file": "averagePay.js",
+			"settings":
+			{
+				"buffer_size": 1723,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "/*"
+			}
+		},
+		{
+			"contents": "/*\nwrite a function  that takes 2 string s \n\na-z = itself\n. = match any character \n* = match any character 0 or more occurence of the previous character\n\ns = 'aba' p 'ab' o false\naa a* true\nab .* true\nab . false\naab c*a*b true\naaa a*. true\n\ntodo edge cases\n\ninput 2 strings,  \n\nlook at pattern\n-  a-z direct match from pattern\n\tand if not match then check if the previous is a * then = true\n- * 1. look to previous character i can ignore it and previous character as well\n- . wild card any\n\n*/\n\nvar findPattern = function (s, p){\n\tvar res = false;\n\tfor(var i = 0; p.length ; i++){\n\t\tif(p.charAt(i)!=s.charAt(i))\n\t\t{\n\t\t\t\n\t\t}\n\t}\n\treturn resturn;\n}",
+			"file": "findPatern.js",
+			"file_size": 260,
+			"file_write_time": 132545456271168725,
+			"settings":
+			{
+				"buffer_size": 645,
+				"line_ending": "Windows",
+				"name": "/*"
+			}
+		},
+		{
+			"contents": "/**\n * @param {number} n\n * @return {string[]}\n ()()\n (())\n */\nvar generateParenthesis = function(n) {\n    var res = [];\n    backtrack(res, \"\",0,0,n);\n    return res;\n};\n\nvar backtrack = function(ans, cur, open, close, n){\n     console.log(ans, cur, open, close)\n        if (cur.length == n * 2) {\n            ans.push(cur);\n            return;\n        }\n       \n        if (open < n)\n            backtrack(ans, cur+\"(\", open+1, close, n);\n        if (close < open)\n            backtrack(ans, cur+\")\", open, close+1, n);    \n}\nconsole.log(generateParenthesis(3 ));\n/*\n2\n0 < 2 (  \n            0 < 1 )\n1<2 ((\n            1 <2 \n\n*/\n/*\nclass Solution {\n    public List<String> generateParenthesis(int n) {\n        List<String> ans = new ArrayList();\n        backtrack(ans, \"\", 0, 0, n);\n        return ans;\n    }\n\n    public void backtrack(List<String> ans, String cur, int open, int close, int max){\n        if (cur.length() == max * 2) {\n            ans.add(cur);\n            return;\n        }\nSystem.print(cur + \" \")\n        if (open < max)\n            backtrack(ans, cur+\"(\", open+1, close, max);\n        if (close < open)\n            backtrack(ans, cur+\")\", open, close+1, max);\n    }\n}*/",
+			"file": "generate-parentheses.js",
+			"file_size": 1240,
+			"file_write_time": 132547014355269592,
+			"settings":
+			{
+				"buffer_size": 1189,
+				"line_ending": "Windows",
+				"name": "/**"
+			}
+		},
+		{
+			"contents": "/*\nvalidate parentisis\ninput\n[](){}\n\noutput \nbool\n\nconstrain\n\t- anytime close is more than open = false\n\t\t- []][\n\t- at the end if close != open = false\n\t\t- [()\n\t- at anytime see different type open before last type close\n\t\t- ({)}\n1. check empty\n2. check if length = odd\n3. 3 hash table of each type\n\t- ['{':1 , '}':1] \n\t- ['[':1,\n4. loop through and increament count for open and close\n5. if read a close, check if close > open\n6. if read in a \n*/",
+			"settings":
+			{
+				"buffer_size": 447,
+				"line_ending": "Windows",
+				"name": "/*"
+			}
+		},
+		{
+			"file": "findMaxPopulation.js",
+			"settings":
+			{
+				"buffer_size": 1780,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "/*"
+			}
+		},
+		{
+			"file": "mergeSorted.js",
+			"settings":
+			{
+				"buffer_size": 1142,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "/*"
+			}
+		},
+		{
+			"file": "findAllAnagram.js",
+			"settings":
+			{
+				"buffer_size": 2374,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "/*"
+			}
+		},
+		{
+			"file": "fractionToDecimal.js",
+			"settings":
+			{
+				"buffer_size": 883,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "/*"
+			}
+		},
+		{
+			"file": "minWindow.js",
+			"settings":
+			{
+				"buffer_size": 809,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "/*"
+			}
+		},
+		{
+			"contents": "Searching 18 files for \"concat\"\n\nC:\\Users\\chris\\code\\testme\\findAllAnagram:\n   42  \tif(s.length && p.length){\n   43  \t\tfor(var i = 0; i < s.length; i++){\n   44: \t\t\tif(isAnagram(s.split(i,i+p.lenght),hashp.concat()))\n   45  \t\t\t{\n   46  \t\t\t\tresult.push(i);\n\nC:\\Users\\chris\\code\\testme\\findAllAnagram.js:\n   46  \tif(s.length && p.length){\n   47  \t\tfor(var i = 0; i < s.length; i++){\n   48: \t\t\tif(isAnagram(s.slice(i,i+p.length),hashp.concat()))\n   49  \t\t\t{\n   50  \t\t\t\tresult.push(i);\n\nC:\\Users\\chris\\code\\testme\\permutation.js:\n   47    //console.log(result, current, remainder);\n   48    if(!remainder.length){\n   49:     result.push(current.concat());//current.concat()\n   50      return;\n   51    }\n\nC:\\Users\\chris\\code\\testme\\subset.js:\n   48    //console.log(nums,result);\n   49     if(nums && nums.length >= 0){//&& result.indexOf(nums)<0){\n   50:      result.push(cur.concat());\n   51     }\n   52    //console.log( nums, result, \"<br>\");\n   ..\n   54      var newnum = nums.splice(0,i);\n   55      //console.log(i,nums,newnum)\n   56:     recursive(cur.concat(newnum), nums,result);\n   57      //nums.splice(i,0,newnum[0]);\n   58      //console.log(i,nums,newnum)\n\nC:\\Users\\chris\\code\\testme\\subsetII.js:\n   36  }\n   37  var recursive = function(nums, result, cur, index){\n   38:   result.push(cur.concat());\n   39    for(var i = 0; i < nums.length; i++){\n   40      //cur.splice(0,0,nums[i]);\n\n7 matches across 5 files\n",
+			"settings":
+			{
+				"buffer_size": 1422,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "sudoku-validate.js",
+			"settings":
+			{
+				"buffer_size": 1779,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "/*"
+			}
+		},
+		{
+			"contents": "/*\nhttps://leetcode.com/problems/sudoku-solver/\n\nWrite a program to solve a Sudoku puzzle by filling the empty cells.\n\nA sudoku solution must satisfy all of the following rules:\n\nEach of the digits 1-9 must occur exactly once in each row.\nEach of the digits 1-9 must occur exactly once in each column.\nEach of the digits 1-9 must occur exactly once in each of the 9 3x3 sub-boxes of the grid.\nThe '.' character indicates empty cells.\n\nInput: board = \n[\n[\"5\",\"3\",\".[124]\",\".[2]\",\"7\",\".[2468]\",\".[189]\",\".[1249]\",\".[248]\"],\n[\"6\",\".\",\".\",\"1\",\"9\",\"5\",\".\",\".\",\".\"],\n[\".[1,2],\",\"9\",\"8\",\".\",\".\",\".\",\".\",\"6\",\".\"],\n[\"8\",\".\",\".\",\".\",\"6\",\".\",\".\",\".\",\"3\"],\n[\"4\",\".\",\".\",\"8\",\".\",\"3\",\".\",\".\",\"1\"],\n[\"7\",\".\",\".\",\".\",\"2\",\".\",\".\",\".\",\"6\"],\n[\".[1,3,;9]\",\"6\",\".\",\".\",\".\",\".\",\"2\",\"8\",\".\"],\n[\".[2,3]\",\".\",\".\",\"4\",\"1\",\"9\",\".\",\".\",\"5\"],\n[\".[1,2,3]\",\".\",\".\",\".\",\"8\",\".\",\".\",\"7\",\"9\"]]\nOutput: \n[[\"5\",\"3\",\"4\",\"6\",\"7\",\"8\",\"9\",\"1\",\"2\"],[\"6\",\"7\",\"2\",\"1\",\"9\",\"5\",\"3\",\"4\",\"8\"],[\"1\",\"9\",\"8\",\"3\",\"4\",\"2\",\"5\",\"6\",\"7\"],[\"8\",\"5\",\"9\",\"7\",\"6\",\"1\",\"4\",\"2\",\"3\"],[\"4\",\"2\",\"6\",\"8\",\"5\",\"3\",\"7\",\"9\",\"1\"],[\"7\",\"1\",\"3\",\"9\",\"2\",\"4\",\"8\",\"5\",\"6\"],[\"9\",\"6\",\"1\",\"5\",\"3\",\"7\",\"2\",\"8\",\"4\"],[\"2\",\"8\",\"7\",\"4\",\"1\",\"9\",\"6\",\"3\",\"5\"],[\"3\",\"4\",\"5\",\"2\",\"8\",\"6\",\"1\",\"7\",\"9\"]]\n\nConstraints:\n\nboard.length == 9\nboard[i].length == 9\nboard[i][j] is a digit or '.'.\nIt is guaranteed that the input board has only one solution.\n\ninput array of arrays\nout array of arrays\nconstrain\n  board.lenght = 9\n  board[i].length = 9\n  only one solution\n  \nread in all row and column\n as read in put into \n  row[1:[5,3,7],2:[6,1,9,5]]\n  column[1:[5,6,8,7],2:[]]\n  subbox[1:[536],2:[]]\n\nloop row / column\n  as at each box find all possible answer for each box by \n  deduct 1-9 from it's row, column and subbox\n\nloop row / column\n  as at each box with list find uniq \n  \nloop row / column\n  as at each box with list find uniq \n  \n*/",
+			"file": "sudoku-solver.js",
+			"file_size": 1906,
+			"file_write_time": 132547886284404424,
+			"settings":
+			{
+				"buffer_size": 1849,
+				"line_ending": "Windows",
+				"name": "/*"
+			}
+		},
+		{
+			"file": "permutation.js",
+			"settings":
+			{
+				"buffer_size": 1525,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "/*"
+			}
+		},
+		{
+			"contents": "/*\nhttps://leetcode.com/problems/subsets/\n78. Subsets\n\nGiven an integer array nums, return all possible subsets (the power set).\n\nThe solution set must not contain duplicate subsets.\n\n \n\nExample 1:\n\nInput: nums = [1,2,3]\nOutput: [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]\nExample 2:\n\nInput: nums = [0]\nOutput: [[],[0]]\n \n\nConstraints:\n\n1 <= nums.length <= 10\n-10 <= nums[i] <= 10\nAll the numbers of nums are unique.\n\ninput: [1,2,3]\noutput: [[], [1], [1,2], [3,2] [1,2,3]]\nconstrain : no empty input, no duplicate inputs, no duplicate output\n\nresult as array\n\nread the input\nput in result\nwhile there still things in the input\nrecurse and take a element out\n\n*/\n\nvar findAllSubset = function(nums){\n  var result = [];\n  //result.push([]);\n  recursive([],nums,result);\n  //console.log(nums);\n  return result;\n}\nvar recursive = function(cur, nums, result){\n  //console.log(nums,result);\n   if(nums && nums.length >= 0){//&& result.indexOf(nums)<0){\n     result.push(cur.concat());\n   }\n  //console.log( nums, result, \"<br>\");\n  for(var i = 0; i < nums.length; i++){\n    var newnum = nums.splice(0,i);\n    //console.log(i,nums,newnum)\n    recursive(cur.concat(newnum), nums,result);\n    //nums.splice(i,0,newnum[0]);\n    //console.log(i,nums,newnum)\n  }\n}\n//console.log(findAllSubset([1,2,3]));\n\nfunction subsets(nums) {\n  let res = [];\nvar lev =0;\n  function find(curr, remaining, start) {\n    res.push(curr);\n\n    for (let i = start; i < remaining.length; i++) {\n      console.log(lev++,\"j \",i,start, remaining, \" cur \", curr,  remaining[i], \" b \",\n        [...curr, remaining[i]],\" r \",remaining.slice(0, i),remaining.slice(i + 1), 'k', \n        [...remaining.slice(0, i), ...remaining.slice(i + 1)]\n      );\n      find(\n        [...curr, remaining[i]],\n        [...remaining.slice(0, i), ...remaining.slice(i + 1)],\n        i\n      );\n\n      //start++;\n    }\n  }\n\n  find([], nums, 0);\n\n  return res;\n}\nconsole.log(subsets([1,2,3]));\n",
+			"file": "subset.js",
+			"file_size": 2018,
+			"file_write_time": 132548956157081149,
+			"settings":
+			{
+				"buffer_size": 1933,
+				"line_ending": "Windows",
+				"name": "/*"
+			}
+		},
+		{
+			"file": "subsetII.js",
+			"settings":
+			{
+				"buffer_size": 945,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "/*"
+			}
 		}
 	],
 	"build_system": "",
@@ -48,9 +271,13 @@
 	},
 	"console":
 	{
-		"height": 0.0,
+		"height": 170.0,
 		"history":
 		[
+			"console.log(1);",
+			"console.log(1)l",
+			"node findAllAnagram.js",
+			"node "
 		]
 	},
 	"distraction_free":
@@ -64,10 +291,10 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/chris/code/testme"
 	],
 	"file_history":
 	[
+		"/C/Users/chris/Downloads/FRIM X BOUNDARY APPLICATION (1).docx",
 		"/C/Users/chris/code/trycraiglist/node_modules/core-js/client/core.js"
 	],
 	"find":
@@ -76,9 +303,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 102.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -86,6 +314,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"concat",
+			"1863",
+			" \",",
+			"res",
 			"QUERY_PARAM_AUTO_MAKE_MODEL",
 			"postal",
 			"if",
@@ -110,7 +342,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 11,
 			"sheets":
 			[
 				{
@@ -141,7 +373,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
@@ -166,11 +398,529 @@
 							"auto_name": "/**",
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
-						"translation.x": 113.333333333,
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "averageLevel.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1553,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1209,
+								1209
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/*",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 515.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "averagePay.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1723,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1124,
+								1124
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/*",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 49.0,
+						"translation.y": 373.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "findPatern.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 645,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								276,
+								276
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/*",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 24.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "generate-parentheses.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1189,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								562,
+								562
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/**",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 87.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 447,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								444,
+								444
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/*",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "findMaxPopulation.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1780,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1128,
+								1128
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/*",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 793.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "mergeSorted.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1142,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								820,
+								820
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/*",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 14.0,
+						"translation.y": 252.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "findAllAnagram.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2374,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1327,
+								1327
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/*",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 736.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "fractionToDecimal.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 883,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								880,
+								880
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/*",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "minWindow.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 809,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								809,
+								809
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/*",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 457.333333333,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1422,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										205,
+										211
+									],
+									[
+										431,
+										437
+									],
+									[
+										640,
+										646
+									],
+									[
+										660,
+										666
+									],
+									[
+										872,
+										878
+									],
+									[
+										1055,
+										1061
+									],
+									[
+										1300,
+										1306
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "sudoku-validate.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1779,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								641,
+								641
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/*",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "sudoku-solver.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1849,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								178,
+								178
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/*",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "permutation.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1525,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								111,
+								111
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/*",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 475.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "subset.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1933,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1862,
+								1862
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/*",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 924.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "subsetII.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 945,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								369,
+								369
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/*",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 368.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
 					"type": "text"
 				}
 			]
@@ -253,7 +1003,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 233.0,
+	"side_bar_width": 115.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
