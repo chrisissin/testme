@@ -54,12 +54,12 @@ var findPermutation = function(result,remainder,current){
     var tmp = remainder[i];
     remainder.splice(i,1);
     current.push(tmp);
-    //console.log("b ", i, remainder);
+    console.log("b ", i, remainder,tmp);
     findPermutation( result, remainder, current);
     current.pop();
     remainder.splice(i,0,tmp);
-    //console.log("a ", i, remainder);
+    console.log("a ", i, remainder,tmp);
   }
   
 }
-console.log(permutation([1,2,3]));
+console.log(permutation([1,1,3]));
