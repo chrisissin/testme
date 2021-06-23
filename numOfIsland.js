@@ -15,12 +15,14 @@ var maxAreaOfIsland = function(grid) {
             let cur = 1;
             if(i+1 < grid.length && grid[i][j] ==1){
                 if(grid[i+1][j]==1){
-                    grid[i+1][j]=0;
-                    cur++;
+                    //grid[i+1][j]=0;
+                    zisland(grid,i+1,j,cur);
+                    //cur++;
                 } 
                 if(grid[i][j+1]==1){
-                    grid[i][j+1]=0;
-                    cur++;
+                    //grid[i][j+1]=0;
+                    zisland(grid,i,j+1,cur);
+                    //cur++;
                 }
             }
             max = Math.max(max, cur);
@@ -28,10 +30,27 @@ var maxAreaOfIsland = function(grid) {
     }
     return max;
 };
+var zisland = function(grid, x, y,cur){
+    if(grid[x+1]&&grid[x+1][y]==1){
+        grid[x+1][y] = 0;
+        zisland(grid,x+1,y,cur);
+        cur++;
+    }
+    if(grid[x][y+1]==1){
+        grid[x][y+1]=0;
+        zisland(grid,x,y+1,cur);
+        cur++;
+    }
+};
+
 let grid = [
-  ["1","1","0","0","0"],
-  ["1","1","0","0","0"],
-  ["0","0","1","0","0"],
-  ["0","0","0","1","1"]
-];
+[0,0,1,0,0,0,0,1,0,0,0,0,0],
+[0,0,0,0,0,0,0,1,1,1,0,0,0],
+[0,1,1,0,1,0,0,0,0,0,0,0,0],
+[0,1,0,0,1,1,0,0,1,0,1,0,0],
+[0,1,0,0,1,1,0,0,1,1,1,0,0],
+[0,0,0,0,0,0,0,0,0,0,1,0,0],
+[0,0,0,0,0,0,0,1,1,1,0,0,0],
+[0,0,0,0,0,0,0,1,1,0,0,0,0]];
+
 console.log(maxAreaOfIsland(grid));
